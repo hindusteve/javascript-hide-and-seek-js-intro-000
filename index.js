@@ -27,7 +27,7 @@ function deepestChild() {
   var next
 
   next = current.querySelectorAll('div')
-  while(next) {
+  while(next[0]) {
     current = next[0]
     next = current.querySelectorAll('div')
   }
